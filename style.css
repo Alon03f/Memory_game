@@ -433,6 +433,10 @@ animation: flame2 1.6s linear infinite;
 
 @media (max-width: 560px) {
 .board {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.card-front .emoji {
+font-size: 50px;
+transform: translateY(-2px);
 }
 }
