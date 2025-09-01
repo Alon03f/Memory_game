@@ -6,7 +6,6 @@
       "🦥","🦔","🦙","🦜"
     ];
 
-    // DOM refs
     const boardEl = document.getElementById('board');
     const p0 = {
       panel: document.getElementById('player-0-panel'),
@@ -286,5 +285,6 @@
       setTimeout(()=>openNameModal(0), 150);
     });
     btnCloseWinner.addEventListener('click', ()=>{ winnerOverlay.classList.remove('show'); });
+
 
   })();
