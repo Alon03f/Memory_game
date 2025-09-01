@@ -1,11 +1,12 @@
   (function(){
-    const PAIRS_COUNT = 8; // 8 צמדים = 16 קלפים
+    const PAIRS_COUNT = 9; // 8 צמדים = 16 קלפים
     const ANIMALS = [
       "🐶","🐱","🦊","🐻","🐼","🐨","🐯","🦁","🐷","🐸","🐵","🐔","🐧","🐦","🦉","🐴",
       "🦄","🐝","🐛","🦋","🐞","🐢","🐍","🐙","🦑","🐳","🐬","🐟","🐊","🦒","🦓","🦘",
       "🦥","🦔","🦙","🦜"
     ];
 
+    // DOM refs
     const boardEl = document.getElementById('board');
     const p0 = {
       panel: document.getElementById('player-0-panel'),
@@ -285,6 +286,5 @@
       setTimeout(()=>openNameModal(0), 150);
     });
     btnCloseWinner.addEventListener('click', ()=>{ winnerOverlay.classList.remove('show'); });
-
 
   })();
